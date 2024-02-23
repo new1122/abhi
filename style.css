@@ -29,6 +29,7 @@ html{
 }
 header{
     position: sticky;
+    background-color: #fff;
     top: 0;
     left: 0;
     right: 0;
@@ -89,6 +90,7 @@ header .icons #menu-bars{
     text-align: center;
     margin: 0%;
     height: auto;
+    background-color: #eee;
 }
 #home .div1{
     font-size: 3rem;
@@ -178,13 +180,12 @@ nav .navbar a .checkbox-wrapper-54:active{
     background-color: #9f9f9f;
   } */
 
-/* #facebook{
-    Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff6347+0,ff6347+5,ff6347+5,ff6347+42,ffffff+49,ffffff+53,ff6347+59,ff6347+100
-    background: rgb(255,99,71); Old browsers
-    background: -moz-linear-gradient(-45deg,  rgba(255,99,71,1) 0%, rgba(255,99,71,1) 5%, rgba(255,99,71,1) 5%, rgba(255,99,71,1) 42%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 53%, rgba(255,99,71,1) 59%, rgba(255,99,71,1) 100%); FF3.6-15
-    background: -webkit-linear-gradient(-45deg,  rgba(255,99,71,1) 0%,rgba(255,99,71,1) 5%,rgba(255,99,71,1) 5%,rgba(255,99,71,1) 42%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 53%,rgba(255,99,71,1) 59%,rgba(255,99,71,1) 100%); Chrome10-25,Safari5.1-6
-    background: linear-gradient(135deg,  rgba(255,99,71,1) 0%,rgba(255,99,71,1) 5%,rgba(255,99,71,1) 5%,rgba(255,99,71,1) 42%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 53%,rgba(255,99,71,1) 59%,rgba(255,99,71,1) 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6347', endColorstr='#ff6347',GradientType=1 ); IE6-9 fallback on horizontal gradient */
+/* #facebook{ */
+
+    /* background: -moz-linear-gradient(-45deg,  blue 0%, blue 5%, blue 5%, blue 42%, rgba(255,255,255,1) 49%, rgba(255,255,255,1) 53%, blue 59%, blue 100%);  */
+    /* background: -webkit-linear-gradient(-45deg,  blue 0%,blue 5%,blue 5%,blue 42%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 53%,blue 59%,blue 100%);  */
+    /* background: linear-gradient(135deg,  blue 0%,blue 5%,blue 5%,blue 42%,rgba(255,255,255,1) 49%,rgba(255,255,255,1) 53%,blue 59%,blue 100%);  */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6347', endColorstr='#ff6347',GradientType=1 );  */
 /*     
     
     background-repeat: no-repeat;  
@@ -213,13 +214,77 @@ nav .navbar a .checkbox-wrapper-54:active{
       100% { 
             background-position:0px; 
       }
-    }
-     */
+    } */
+    
 
+#hr01{
+    border: 1px solid black; width: 18rem; height: 1px; align-items: center;
+}
+#span01{
+    text-align: left; font-size: 6rem;
+}
 
+#hr02{
+    margin-top: -5rem; border: 1px solid black; width: 10rem; height: 1px; align-items: center;
+}
+#span02{
+    text-align: left; width: fit-content;
+}
 
+#recent-highlights{
+    /* margin-top: 2rem; */
+    height: 50rem;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    padding-top: 6rem;
+    position: relative;
+}
 
+#leftspan{
+    width: 80%;
+    padding: 2rem;
+    height: max-content;
+    /* border-left: solid black; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+#rightspan{
+    width: 50%;
+    overflow: scroll;
+    height: 55rem;
+    padding: 0rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    
+}
+.marq2{
+    height: 50rem;
+}
+.imagesslide{
+    width: 45%;
+    /* height: 150%; */
+}
+#rightspan img{
+    width: 50%;
+}
+#rightspan table #td00{
+    width: 40%;
+    text-align: right;
+}
+#rightspan table #td01{
+    width: 50%;
+    text-align: left;
+    vertical-align: top;
 
+    font-size: 2rem;
+    margin-top: -50%;
+    padding-top: 0%;
+    color: darkblue;
+}
+
+#rightspan table #td01 p{
+    font-size: 1.1rem;
+    color: black;
+}
 
 
 
@@ -231,11 +296,12 @@ nav .navbar a .checkbox-wrapper-54:active{
 
 @media (max-width: 1091px) {
     html{
-        font-size: 55%;
+        font-1size: 55%;
     }
     header{
         padding: 1rem 2rem;
         margin-bottom: 0%;
+        margin-top: 0%;
     }
     .footer .credit{
         font-size: 1.3rem;
@@ -248,12 +314,14 @@ nav .navbar a .checkbox-wrapper-54:active{
     
     header .icons #menu-bars{
         display: inline-block;
-        
+        font-size: 2.2rem;
+        background: none;
     }
     
     header .icons i,
     header .icons a{
-    font-size: 3.8rem; 
+    font-size: 2.5rem; 
+    background: none;
     }
     
     header .navbar{
@@ -283,9 +351,11 @@ nav .navbar a .checkbox-wrapper-54:active{
         width: auto;
         display: block;
         /* width: fit-content; */
+        align-items: center;
+        text-align: center;
     }
     .abhilogo img{
-        height: 5.1rem;
+        height: 4.2rem;
         width: 100%;
         width: fit-content;
         background-color: white;
@@ -311,7 +381,8 @@ nav .navbar a .checkbox-wrapper-54:active{
     #home .div1{
         width: 100%;
         text-align: center;
-        margin-top: 7rem;
+        margin-top: 0;
+        padding-top: 6rem;
         font-size: 2.2rem;
         font-weight: 800;
         line-height: 210%;
@@ -342,6 +413,44 @@ nav .navbar a .checkbox-wrapper-54:active{
         align-items: center;
         margin-left: 5rem;
         font-size: 4rem;
+    }
+    #span01{
+        text-align: left; font-size: 4.5rem;
+    }
+    #span02{
+        text-align: left; width: fit-content;
+        font-size: 3.2rem;
+    }
+    #span03{
+        font-size: 3rem;
+    }
+    #recent-highlights{
+        /* margin-top: 2rem; */
+        /* margin-left: 5%; */
+        display: grid;
+        width: 94%;
+        /* display: flex; */
+        padding-top: 6rem;
+        position: relative;
+        margin-top: 35rem;
+    }
+    #leftspan{
+        width: 95%;
+        padding: 2rem;
+     /* border-left: solid black; */
+     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+        height: max-content;
+    }
+    #rightspan{
+        width: 95%;
+      
+        padding: 2rem;
+    /* border-left: solid black; */
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    }
+    #rightspan table #td00{
+        width: 40%;
+        text-align: center;
     }
  }
 
