@@ -237,7 +237,7 @@ nav .navbar a .checkbox-wrapper-54:active{
     width: 90%;
     margin-left: 5%;
     display: flex;
-    padding-top: 6rem;
+    padding-top: 1rem;
     position: relative;
 }
 
@@ -254,8 +254,13 @@ nav .navbar a .checkbox-wrapper-54:active{
     height: 55rem;
     padding: 0rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    
+    margin-left: 2rem;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
 }
+#rightspan::-webkit-scrollbar {
+    display: none;
+  }
 .marq2{
     height: 50rem;
 }
@@ -268,23 +273,106 @@ nav .navbar a .checkbox-wrapper-54:active{
 }
 #rightspan table #td00{
     width: 40%;
-    text-align: right;
+    border-bottom: 1px solid rgb(204, 197, 197);
+    text-align: center;
 }
+
 #rightspan table #td01{
     width: 50%;
     text-align: left;
     vertical-align: top;
-
+    border-bottom: 1px solid rgb(204, 197, 197);
     font-size: 2rem;
     margin-top: -50%;
     padding-top: 0%;
     color: darkblue;
+    height: 17rem;
 }
 
 #rightspan table #td01 p{
     font-size: 1.1rem;
     color: black;
 }
+
+.footer{
+    margin-top: 25rem;
+}
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    margin-left: 10rem;
+}
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 2.5rem;
+    color: var(--black);
+}
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: var(--light-color);
+}
+.footer .box-container .box a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .2rem solid rgba(0,0,0,.1);
+    font-size: 2rem;
+    color: var(--black);
+    padding: .5rem;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+}
+.footer .credit span{
+    color: var(--green);
+}
+h1{
+    font-size: 4.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0%;
+    margin-top: 5rem;
+    text-decoration: underline;
+}
+.current{
+    margin: 0;
+    padding: .8rem;
+    background-color: #c5c4c4;
+    display: block;
+    text-align: center;
+    font-size: 1.9rem;
+    position:sticky;
+    font-weight: 900;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,7 +384,7 @@ nav .navbar a .checkbox-wrapper-54:active{
 
 @media (max-width: 1091px) {
     html{
-        font-1size: 55%;
+        font-size: 55%;
     }
     header{
         padding: 1rem 2rem;
@@ -322,6 +410,8 @@ nav .navbar a .checkbox-wrapper-54:active{
     header .icons a{
     font-size: 2.5rem; 
     background: none;
+    margin: 0%;
+    padding: 0%;
     }
     
     header .navbar{
@@ -376,6 +466,7 @@ nav .navbar a .checkbox-wrapper-54:active{
     .icons{
        float: right;
        width: fit-content;
+       padding: 0%;
     }
     
     #home .div1{
@@ -428,11 +519,11 @@ nav .navbar a .checkbox-wrapper-54:active{
         /* margin-top: 2rem; */
         /* margin-left: 5%; */
         display: grid;
-        width: 94%;
+        width: 98%;
         /* display: flex; */
-        padding-top: 6rem;
+        padding-top: 2rem;
         position: relative;
-        margin-top: 35rem;
+        margin-top: 0rem;
     }
     #leftspan{
         width: 95%;
@@ -443,14 +534,37 @@ nav .navbar a .checkbox-wrapper-54:active{
     }
     #rightspan{
         width: 95%;
-      
-        padding: 2rem;
+        margin-top: 2rem;
+        margin-left: 0rem;
+        border-top-left-radius: 2rem;
+        border-top-right-radius: 2rem;
+        /* padding: 2rem; */
     /* border-left: solid black; */
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     }
     #rightspan table #td00{
         width: 40%;
         text-align: center;
+    }
+    #rightspan{
+        border-top: 1px solid black;
+    }
+    #rightspan table{
+        margin-top: 0.2rem;
+    }
+    .footer .credit{
+        font-size: 1.3rem;
+    }
+    .footer{
+        margin-top: 40rem;
+    }
+    h1{
+        text-decoration: underline;
+        font-size: 3.2rem;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 0%;
+        margin-top: 30rem;
     }
  }
 
