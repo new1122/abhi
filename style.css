@@ -517,13 +517,14 @@ h1{
     }
     #recent-highlights{
         /* margin-top: 2rem; */
-        /* margin-left: 5%; */
+        margin-left: 3%;
         display: grid;
         width: 98%;
         /* display: flex; */
         padding-top: 2rem;
         position: relative;
         margin-top: 0rem;
+        height: max-content;
     }
     #leftspan{
         width: 95%;
@@ -556,7 +557,9 @@ h1{
         font-size: 1.3rem;
     }
     .footer{
-        margin-top: 40rem;
+        /* margin-top: 40rem; */
+        position:static;
+        margin-top: 4%;
     }
     h1{
         text-decoration: underline;
@@ -564,7 +567,7 @@ h1{
         text-align: center;
         margin-top: 2rem;
         margin-bottom: 0%;
-        margin-top: 30rem;
+        margin-top: 20rem;
     }
  }
 
