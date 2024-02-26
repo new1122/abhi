@@ -517,7 +517,7 @@ h1{
     }
     #recent-highlights{
         /* margin-top: 2rem; */
-        /* margin-left: 5%; */
+        margin-left: 1%;
         display: grid;
         width: 98%;
         /* display: flex; */
